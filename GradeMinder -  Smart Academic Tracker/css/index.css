@@ -158,43 +158,6 @@ button:hover {
   transition: all 400ms ease-in-out;
 }
 
-/* Defining animation keyframes */
-@keyframes border-changer {
-  0% { /* Starting state */
-    background: #4285F4; /* Blue */
- }
-  25% { /* 1st quarter */
-    background: #0F9D58; /* Green */
- }
-  50% { /* 1st half */
-    background: #F4B400; /* Yellow */
- }
-  75% { /* 3rd quarter */
-    background: #DB4437; /* Red */
- }
-  100% { /* Final state */
-    background: #4285F4; /* Blue */
- }
-}
-
-@keyframes border-changer-hover {
-
-  0% {
-    background:  #fff; /* Blue */
-  }
-  25% {
-    background:  #fff; /* Green */
-  }
-  50% {
-    background:  #fff; /* Yellow */
-  }
-  75% {
-    background:  #fff; /* Red */
-  }
-  100% {
-    background:  #fff; /* Blue */
-  }
-}
 
 /* Animation: color-changer-hover-border */
 @keyframes color-changer-hover-border {
@@ -279,17 +242,6 @@ button:hover {
   font-size: 18px; /* average value size */
   text-align: center; /* center align */
   margin-top: 10px; /* add spacing */
-}
-
-
-/*desktops - higher resolution*/
-@media (min-width: 1281px){
-
-}
-
-/*laptops, desktops*/
-@media (min-width: 1025px) and (max-width: 1280px) {
-
 }
 
 /*tablets, ipads (portrait)*/
