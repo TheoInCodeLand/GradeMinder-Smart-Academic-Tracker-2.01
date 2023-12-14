@@ -1,0 +1,351 @@
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif; /* Arial sans-serif font */
+  background-color: #f5f5f5; /* Light gray background */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Display as a flex container */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Full viewport height */
+  transition: all 400ms ease-in-out; /* Smooth transition effect */
+}
+
+
+.material-symbols-outlined {
+  /* 1rem padding */
+  padding: 1rem 1rem;
+  /* 0.7rem margin */
+  margin: 0.7rem;
+  /* 1px solid border with rgba color */
+  border: 1px solid rgba(128, 128, 128, 0.464);
+  /* 50% border-radius */
+  border-radius: 50%;
+  /* infinite 4s color-changer-hover-border animation */
+  animation: color-changer-hover-border 4s infinite;
+}
+
+/* Container background color, radius, and shadow */
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+  /* Container padding and width */
+  padding: 20px;
+  width: 400px;
+  transition: all 400ms ease-in-out;
+}
+
+h1 {
+  /* set text color to dark grey */
+  color: #333;
+ 
+  /* center text alignment */
+  text-align: center;
+ 
+  /* transform text to uppercase */
+  text-transform: uppercase;
+ 
+  /* set letter spacing to 6px */
+  letter-spacing: 6px;
+ 
+  /* set font weight to 200 */
+  font-weight: 200;
+ 
+  /* set line height to 1.7 */
+  line-height: 1.7;
+ 
+  /* set font size to larger */
+  font-size: larger;
+ 
+  /* set margin to 2rem */
+  margin: 2rem;
+ 
+  /* animate color change with 4s duration and infinite loop */
+  animation: color-changer 4s infinite;
+
+  transition: all 400ms ease-in-out;
+}
+
+/* Define animation for changing text color */
+@keyframes color-changer {
+
+  0% { /* Start with blue color */
+    color: #4285F4; 
+ }
+  25% { /* Transition to green */
+    color: #0F9D58; 
+ }
+  50% { /* Shift to yellow */
+    color: #F4B400; 
+ }
+  75% { /* Turn red */
+    color: #DB4437; 
+ }
+  100% { /* Repeat blue */
+    color: #4285F4; 
+ }
+}
+
+.input-container {
+  /* Center inputs in container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 400ms ease-in-out;
+}
+
+
+/* input styling */
+input {
+
+  text-transform: capitalize;
+  /* add padding and margin */
+  padding: 8px;
+  margin: 1rem;
+ 
+  /* set height and width */
+  height: 3rem;
+  width: 80%;
+ 
+  /* add padding-left and adjust box-sizing */
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+ 
+  /* style border */
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+ 
+  /* remove outline and letter-spacing */
+  outline: none;
+  letter-spacing: 2px;
+ 
+  /* add transition */
+  transition: all 1000ms ease-in-out;
+}
+
+button {
+  /* Button padding and margins */
+  padding: 0.7rem 2rem;
+  margin: 10px 0;
+ 
+  /* Button background color and text color */
+  background-color: #4285F4;
+  color: #fff;
+ 
+  /* Button border radius and cursor */
+  border-radius: 10px;
+  cursor: pointer;
+ 
+  /* Button border, animation, and transition */
+  border: 1px solid transparent;
+  transition: all 1000ms ease-in-out;
+  
+}
+
+/* On hover, button changes color */
+button:hover {
+  color: #4285F4;
+  background: transparent;
+   
+  /* Smooth color transition */
+  animation: color-changer-hover-border 50s infinite;
+   
+  /* Smooth border transition */
+  animation: border-changer-hover 50s infinite;
+
+  transition: all 400ms ease-in-out;
+}
+
+/* Defining animation keyframes */
+@keyframes border-changer {
+  0% { /* Starting state */
+    background: #4285F4; /* Blue */
+ }
+  25% { /* 1st quarter */
+    background: #0F9D58; /* Green */
+ }
+  50% { /* 1st half */
+    background: #F4B400; /* Yellow */
+ }
+  75% { /* 3rd quarter */
+    background: #DB4437; /* Red */
+ }
+  100% { /* Final state */
+    background: #4285F4; /* Blue */
+ }
+}
+
+@keyframes border-changer-hover {
+
+  0% {
+    background:  #fff; /* Blue */
+  }
+  25% {
+    background:  #fff; /* Green */
+  }
+  50% {
+    background:  #fff; /* Yellow */
+  }
+  75% {
+    background:  #fff; /* Red */
+  }
+  100% {
+    background:  #fff; /* Blue */
+  }
+}
+
+/* Animation: color-changer-hover-border */
+@keyframes color-changer-hover-border {
+  0% {
+    border: 1px solid #4285F4; /* Blue */
+ }
+  25% {
+    border: 1px solid #0F9D58; /* Green */
+ }
+  50% {
+    border: 1px solid #F4B400; /* Yellow */
+ }
+  75% {
+    border: 1px solid #DB4437; /* Red */
+ } 
+ 100% {
+    border: 1px solid #4285F4; /* Blue */
+ }
+}
+
+.result-container {
+  margin-top: 20px; /* adds top margin */
+  align-self: center; /* centers align */
+  justify-self: center; /* centers justify */
+  text-align: center; /* centers text */
+  transition: all 400ms ease-in-out;
+}
+
+.result-container h4 {
+  /* Style result title */
+  font-size: 1.1em;
+  font-weight: 50;
+  transition: all 400ms ease-in-out;
+}
+
+.result-container ul {
+  /* Unordered list styling */
+  list-style: none;
+
+  /* Adjusting font size and weight */
+  font-size: small;
+  font-weight: 0.05rem;
+  transition: all 400ms ease-in-out;
+}
+
+/* Hide list-style of #marksList */
+/* Marks List */
+
+#marksList {
+  list-style-type: none; /* No Bullets */
+  padding: 0; /* No Padding */
+  transition: all 400ms ease-in-out;
+}
+
+
+.entry {
+  /* Define bold text for entry */
+  font-weight: bold;
+  transition: all 400ms ease-in-out;
+}
+
+/* Delete button styling */
+.delete-button {
+  background-color: #e74c3c; /* Red color */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  padding: 8px; /* 8px padding */
+  border-radius: 4px; /* 4px border radius */
+  cursor: pointer; /* Hand cursor on hover */
+  margin-left: 10px; /* 10px margin left */
+  transition: background-color 0.3s ease; /* 0.3s transition on background color */
+}
+
+/* Set delete button hover color */
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* average value container */
+#average {
+  color: #333; /* medium dark gray */
+  font-size: 18px; /* average value size */
+  text-align: center; /* center align */
+  margin-top: 10px; /* add spacing */
+}
+
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px){
+
+}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    box-shadow: 0px 0px 0px;
+  }
+
+  body {
+    background: #fff;
+    align-items: flex-start;
+  }
+}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .container {
+    box-shadow: 0px 0px 0px;
+  }
+
+  body {
+    background: #fff;
+    align-items: flex-start;
+  }
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    box-shadow: 0px 0px 0px;
+  }
+
+  body {
+    background: #fff;
+    align-items: flex-start;
+  }
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 220px) and (max-width: 480px) {
+  .container {
+    box-shadow: 0px 0px 0px;
+  }
+
+  body {
+    background: #fff;
+    align-items: flex-start;
+  }
+
+}
+
+#message-container {
+  font-size: 0.6em;
+  margin: 1rem;
+}
+
+#download-containe{
+  display: none;
+}

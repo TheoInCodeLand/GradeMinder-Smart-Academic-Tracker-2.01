@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Grade Calculator</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+  <!-- Container for the entire application -->
+  <div class="container">
+
+    <!-- Heading for the application -->
+    <h1>
+      
+      <span class="material-symbols-outlined">
+        network_intelligence_history
+      </span> <br>
+      
+      Average <br>calculator <br>(UMP) 
+    </h1>
+
+    <!-- Container for input fields and buttons -->
+    <div class="input-container">
+      
+      <!-- Input field for subject name -->
+      <input type="text" id="subject" placeholder="Enter subject name">
+      
+      <!-- Input field for grade, with specified range -->
+      <input type="number" id="mark" placeholder="Enter grade" min="0" max="100">
+      
+      <!-- Button to add the entered grade -->
+      <button onclick="addMark()">Add Grade</button>
+    </div>
+
+    <!-- Container for displaying grades and average -->
+    <div class="result-container">
+      
+      <!-- List to display entered grades -->
+      <ul id="gradesList"></ul>
+
+      <!-- Display area for the calculated average -->
+      <p id="average">N/A</p>
+
+      <div id="download-container"></div>
+      <button onclick="downloadGrades()" style="display: none;">Download Grades</button>
+
+      <div id="message-container"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript code for the grade calculator -->
+  <script src="./javascript/average.js"></script>
+
+</body>
+</html>
